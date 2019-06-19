@@ -136,7 +136,7 @@ class ezShip
         //回傳的狀態 S01:表示成功
         $return_order_status = (isset($parseParamArr['order_status'])) ? $parseParamArr['order_status'] : '';
 
-        if($return_order_status)!='S01'){
+        if(($return_order_status)!='S01'){
             $errorMsg = '';
             switch ($return_order_status) {
                 case 'E05':
